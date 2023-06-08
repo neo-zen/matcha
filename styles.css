@@ -1,8 +1,67 @@
 body {
     background-color: #fffbf7;
 }
+/*Barra de navegacion*/
+header {
+    margin: 40px 20px 0 20px;
+    height: 45px;
+    font-size: 0;
+    vertical-align: middle;
+    
+}
+header > * {
+    display: inline-block;
+    font-size: 16px;
+    height: 100%;
+    line-height:45px;
+    font-family: sans-serif;
+    
+}
+.logo {
+    width: 15%;
+}
+.logo img {
+    height: 50px;
+}
+.navbar {
+    width: 70%;
+    color: #025157;
+    font-weight: 500;
+    text-align: center;
+}
+.navbar li{
+    display: inline;
+    margin: 25px;
+}
+
+.actions {
+    width: 15%;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+}
+.actions > *{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/*Sign in*/
+.actions a {
+    color: #67b54b;
+    margin-right: 10px;
+}
+/*Start free trial*/
+.actions button{
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: none;
+    border-radius: 5px;
+}
+/*Principal*/
 main{
     text-align: center;
+    margin-top: 140px;
 }
 h1 {
     color: #025157;
@@ -11,10 +70,10 @@ h1 {
 #debajo-titulo{
     color: #46484c;
 }
-p{
+.texto-promo {
     color: #8b8b8bcc;
 }
-button{
+main button{
     background-color: #025157;
     color: #fff;
 }
