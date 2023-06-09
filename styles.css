@@ -2,11 +2,19 @@ body {
     background-color: #fffbf7;
 }
 /*Barra de navegacion*/
+.fixed-header {
+    position: fixed;
+    background-color: #dbdddd;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 header {
     margin: 40px 20px 0 20px;
-    height: 45px;
+    /*height: 45px;*/
     font-size: 0;
     vertical-align: middle;
+    
     
 }
 header > * {
@@ -61,11 +69,11 @@ header > * {
 /*Principal*/
 main{
     text-align: center;
-    margin-top: 140px;
+    margin-top: 285px;
 }
 h1 {
     color: #025157;
-    /*font-family: verdana 22px*/
+    font-family: verdana 22px;
 }
 #debajo-titulo{
     color: #46484c;
@@ -73,7 +81,53 @@ h1 {
 .texto-promo {
     color: #8b8b8bcc;
 }
-main button{
+main button, .seccion-video button{
     background-color: #025157;
     color: #fff;
+    border-radius: 5px;
+    padding: 6px 20px;
+    
 }
+input {
+    border-radius: 5px;
+    border: 1px solid #a9b1b3;
+    padding: 6px 20px;
+    
+}
+/*Seccion-video*/
+.seccion-video {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+.div-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2%;
+}
+.div-video img {
+    width: 120px;
+    margin-top: 10px;
+}
+.seccion-video h2 {
+    font-family: serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+}
+.seccion-video p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.form-video form{
+    /*display: flex;*/
+}
+.form-video > p {
+    color: #025157;
+    /*margin-right: 18px;*/
+}
+
